@@ -189,6 +189,7 @@ namespace laszip {
 			inline const char *compressWith(TEncoder& encoder,
                 const char *buf)
             {
+				std::cout << "field.compressWith\n";
                 T this_val = packers<type>::unpack(buf);
 				if (!compressor_inited_)
 					compressor_.init();
@@ -464,6 +465,7 @@ namespace laszip {
 
 			virtual const char *compress(const char *in)
             {
+				std::cout << "compress record\n";
                 for (auto f: fields_)
                     in = f->compressRaw(in);
                 return in;

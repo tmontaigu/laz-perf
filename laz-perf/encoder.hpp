@@ -119,6 +119,7 @@ namespace laszip {
 			}
 
 			void done() {
+				std::cout << "encoders::done()\n";
 				U32 init_base = base;                 // done encoding: set final data bytes
 				BOOL another_byte = TRUE;
 
@@ -142,13 +143,17 @@ namespace laszip {
 				}
 
 				I64 buffer_size = outbyte - outbuffer;
+				std::cout << "buffer_size: " << buffer_size << '\n';
 				if (buffer_size) outstream.putBytes(outbuffer, (U32)buffer_size);
 
 				// write two or three zero bytes to be in sync with the decoder's byte reads
 				outstream.putByte(0);
 				outstream.putByte(0);
 
-				if (another_byte) outstream.putByte(0);
+				if (another_byte) {
+					outstream.putByte(0);
+					std::cout << "another_byte\n";
+				}
 			}
 
 			/* Encode a bit with modelling                               */
@@ -273,6 +278,7 @@ namespace laszip {
 
 		private:
 			void propagate_carry() {
+				std::cout << "propagate carry\n";
 				U8 * b;
 				if (outbyte == outbuffer)
 					b = endbuffer - 1;
@@ -280,6 +286,7 @@ namespace laszip {
 					b = outbyte - 1;
 				while (*b== 0xFFU)
 				{
+					std::cout << outbuffer - b << '\n';
 					*b = 0;
 					if (b == outbuffer)
 						b= endbuffer - 1;
@@ -293,6 +300,7 @@ namespace laszip {
 			}
 
 			void renorm_enc_interval() {
+				std::cout << "renorm_enc_interval\n";
 				do {                                          // output and discard top byte
 					assert(outbuffer <= outbyte);
 					assert(outbyte < endbuffer);
@@ -304,6 +312,7 @@ namespace laszip {
 			}
 
 			void manage_outbuffer() {
+				std::cout << "manage_outbuffer\n";
 				if (outbyte == endbuffer) outbyte = outbuffer;
 				outstream.putBytes(outbyte, AC_BUFFER_SIZE);
 				endbyte = outbyte + AC_BUFFER_SIZE;
