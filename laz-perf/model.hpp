@@ -35,6 +35,7 @@
 #include "util.hpp"
 
 #include <stdexcept>
+#include <iostream>
 
 namespace laszip {
 	namespace models {
@@ -143,6 +144,7 @@ namespace laszip {
 			}
 
 			inline void update() {
+				std::cout << "arithmetic_model::update()\n";
 				// halve counts when a threshold is reached
 				if ((total_count += update_cycle) > DM__MaxCount) {
 					total_count = 0;

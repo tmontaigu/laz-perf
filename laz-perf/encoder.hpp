@@ -143,7 +143,7 @@ namespace laszip {
 				}
 
 				I64 buffer_size = outbyte - outbuffer;
-				std::cout << "buffer_size: " << buffer_size << '\n';
+				std::cout << "Buffer size in encoder.done(): " << buffer_size << '\n';
 				if (buffer_size) outstream.putBytes(outbuffer, (U32)buffer_size);
 
 				// write two or three zero bytes to be in sync with the decoder's byte reads
@@ -181,6 +181,7 @@ namespace laszip {
 			/* Encode a symbol with modelling                            */
 			template <typename EntropyModel>
 			void encodeSymbol(EntropyModel& m, U32 sym) {
+				std::cout << "encoder::encodeSymbol: " <<  length << "\n";
 				assert(sym <= m.last_symbol);
 
 				U32 x, init_base = base;
@@ -192,8 +193,10 @@ namespace laszip {
 				}
 				else {
 					x = m.distribution[sym] * (length >>= DM__LengthShift);
+					std::cout << "length: " << length << '\n';
 					base   += x;                                            // update interval
 					length  = m.distribution[sym+1] * length - x;
+					std::cout << "length: " << length  << " sym +1: " << (sym + 1) << " distrib: " << m.distribution[sym +1] << '\n';
 				}
 
 				if (init_base > base) propagate_carry();                 // overflow = carry
@@ -201,6 +204,7 @@ namespace laszip {
 
 				++m.symbol_count[sym];
 				if (--m.symbols_until_update == 0) m.update();    // periodic model update
+				std::cout << "length at end of encode symbol: " << length <<  "\n";
 			}
 
 			/* Encode a bit without modelling                            */
@@ -302,6 +306,7 @@ namespace laszip {
 			void renorm_enc_interval() {
 				std::cout << "renorm_enc_interval\n";
 				do {                                          // output and discard top byte
+					std::cout << "renorme_dec_interval: " << length << ' ' << (length << 8) <<"\n";
 					assert(outbuffer <= outbyte);
 					assert(outbyte < endbuffer);
 					assert(outbyte < endbyte);
@@ -323,12 +328,13 @@ namespace laszip {
 			arithmetic<TOutStream>(const arithmetic<TOutStream>&) = delete;
 			arithmetic<TOutStream>& operator = (const arithmetic<TOutStream>&) = delete;
 
-			private:
+			//private:
+			public:
 				U8* outbuffer;
 				U8* endbuffer;
 				U8* outbyte;
 				U8* endbyte;
-				U32 base, value, length;
+				U32 base, length;
 
 				TOutStream& outstream;
 		};

@@ -181,7 +181,20 @@ namespace laszip {
 				compressor_(sizeof(T) * 8),
 				decompressor_(sizeof(T) * 8),
 				compressor_inited_(false),
-				decompressor_inited_(false) { }
+				decompressor_inited_(false) {
+/*s
+				std::cout << "Compressor of int record after creation: \n";
+				std::cout << "k " << compressor_.k << '\n';
+				std::cout << "bits " << compressor_.bits << '\n';
+				std::cout << "contexts " << compressor_.contexts << '\n';
+				std::cout << "bits_high: " << compressor_.bits_high << '\n';
+				std::cout << "range: " << compressor_.range << '\n';
+				std::cout << "corr_bits: " << compressor_.corr_bits << '\n';
+				std::cout << "corr_rang: " << compressor_.corr_range << '\n';
+				std::cout << "corr_min " << compressor_.corr_min << '\n';
+				std::cout << "corr_max" << compressor_.corr_max << '\n';
+				*/
+			}
 
 			template<
 				typename TEncoder
@@ -191,6 +204,7 @@ namespace laszip {
             {
 				std::cout << "field.compressWith\n";
                 T this_val = packers<type>::unpack(buf);
+                std::cout << "Compressor is inited: ?" << compressor_inited_ << '\n';
 				if (!compressor_inited_)
 					compressor_.init();
 
@@ -450,6 +464,7 @@ namespace laszip {
 			template<typename TFieldType>
 			void add_field()
             {
+				std::cout << "Add field\n";
                 using TField = field<TFieldType>;
 
 				fields_.push_back(base_field::ptr(new
@@ -465,7 +480,7 @@ namespace laszip {
 
 			virtual const char *compress(const char *in)
             {
-				std::cout << "compress record\n";
+				std::cout << "Compressing\n";
                 for (auto f: fields_)
                     in = f->compressRaw(in);
                 return in;

@@ -52,12 +52,11 @@ struct SuchStream
 	size_t idx;
 };
 
-int main()
-{
-	// import namespaces to reduce typing
-	//
-	using namespace laszip;
-	using namespace laszip::formats;
+int main2() {
+    // import namespaces to reduce typing
+    //
+    using namespace laszip;
+    using namespace laszip::formats;
 
 	typedef encoders::arithmetic<SuchStream> EncoderType;
 	typedef decoders::arithmetic<SuchStream> DecoderType;
@@ -119,6 +118,76 @@ int main()
 		// Finally make sure things match, otherwise bail
 		if (a != i)
 			throw std::runtime_error("I have failed thee!");
+	}
+
+	// And we're done
+	std::cout << "Done!" << std::endl;
+
+	return 0;
+}
+
+int main() {
+	// import namespaces to reduce typing
+	//
+	using namespace laszip;
+	using namespace laszip::formats;
+
+	typedef encoders::arithmetic<SuchStream> EncoderType;
+	typedef decoders::arithmetic<SuchStream> DecoderType;
+
+	size_t num_elements = 21;
+
+	// Get a memory stream backed encoder up
+	SuchStream s;
+	EncoderType encoder(s);
+
+
+	auto compressor = make_dynamic_compressor(encoder);
+	compressor->add_field<int>();
+
+
+
+	// Encode some dummy data
+	//
+	for (int i = 0 ; i < num_elements; i ++) {
+		std::cout << "=== " << i << " ===\n";
+		int mdr = i;
+		const char *p = (const char*)&mdr;
+		std::cout << "[" << static_cast<int>(p[0]) << ", " << static_cast<int>(p[1]) << ", "<< static_cast<int>(p[2]) << ", "<< static_cast<int>(p[3]) << "]\n";
+		// All compressor cares about is your data as a pointer, it will unpack data
+		// automatically based on the fields that were specified and compress them
+		//
+		compressor->compress((const char*)&mdr);
+	}
+
+	encoder.done();
+
+	std::cout << "Points compressed to: " << s.buf.size() << " bytes" << std::endl;
+
+	std::cout << "==============================Decompression=======================\n";
+
+	DecoderType decoder(s);
+
+	// Print some fun stuff about compression
+	//
+
+	auto decompressor = make_dynamic_decompressor(decoder);
+	decompressor->add_field<int>();
+
+	// This time we'd read the values out instead and make sure they match what we pushed in
+	//
+	for (int i = 0 ; i < num_elements ; i ++) {
+		std::cout << "=== " << i << " ===\n";
+		// When we decompress data we need to provide where to decode stuff to
+		//
+		int mdr;
+		decompressor->decompress((char *)&mdr);
+
+		// Finally make sure things match, otherwise bail
+		if (mdr != i)
+			throw std::runtime_error("I have failed thee!");
+
+		std::cout << '\n';
 	}
 
 	// And we're done

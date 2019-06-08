@@ -119,12 +119,16 @@ namespace laszip {
 					(instream.getByte() << 16) |
 					(instream.getByte() << 8) |
 					instream.getByte();
+				std::cout << "readInitBytes gives value: " << value << "\n";
 			}
 
 			template<typename TEntropyModel>
 			U32 decodeBit(TEntropyModel& m) {
+				std::cout << "decodeBit -> length: " << length << '\n';
 				U32 x = m.bit_0_prob * (length >> BM__LengthShift);       // product l x p0
+				std::cout << "bit0prob " << m.bit_0_prob << " x: " << x << '\n';
 				U32 sym = (value >= x);                                          // decision
+				std::cout << "value:" << value << " sym: " << sym << "\n";
 				// update & shift interval
 				if (sym == 0) {
 					length  = x;
@@ -138,11 +142,13 @@ namespace laszip {
 				if (length < AC__MinLength) renorm_dec_interval();        // renormalization
 				if (--m.bits_until_update == 0) m.update();       // periodic model update
 
+				std::cout << "length at end of decodeBit: " << length << "\n";
 				return sym;                                         // return data bit value
 			}
 
 			template<typename TEntropyModel>
 			U32 decodeSymbol(TEntropyModel& m) {
+				std::cout << "decodeSymbol -> length: " << length << '\n';
 				U32 n, sym, x, y = length;
 
 				if (m.decoder_table) {             // use table look-up for faster decoding
@@ -151,6 +157,12 @@ namespace laszip {
 
 					sym = m.decoder_table[t];      // initial decision based on table look-up
 					n = m.decoder_table[t+1] + 1;
+					for (int i = 0; i < (m.table_size + 2); ++i)
+					{
+						std::cout << m.decoder_table[i] << ", ";
+					}
+					std::cout << "len : " << (m.table_size + 2) << '\n';
+					std::cout << "t: " << t << " sym: " << sym << " n " << n << '\n';
 
 					while (n > sym + 1) {                      // finish with bisection search
 						U32 k = (sym + n) >> 1;
@@ -159,7 +171,9 @@ namespace laszip {
 
 					// compute products
 					x = m.distribution[sym] * length;
-					if (sym != m.last_symbol) y = m.distribution[sym+1] * length;
+					std::cout << "sym: " << sym << " model.distribution: " <<  m.distribution[sym] << "\n";
+					if (sym != m.last_symbol)
+						y = m.distribution[sym+1] * length;
 				}
 				else {                                  // decode using only multiplications
 					x = sym = 0;
@@ -179,14 +193,19 @@ namespace laszip {
 					} while ((k = (sym + n) >> 1) != sym);
 				}
 
+				std::cout << "VALUE: "<< value  << " X " << x << '\n';
 				value -= x;                                               // update interval
+				std::cout << "VALUE: "<< value << '\n';
 				length = y - x;
 
+				std::cout << "length: " << length << " will renorm ? " << (length < AC__MinLength) << '\n';
 				if (length < AC__MinLength) renorm_dec_interval();        // renormalization
 
 				++m.symbol_count[sym];
+				std::cout << "symbols until update: " << (m.symbols_until_update  - 1)<< '\n';
 				if (--m.symbols_until_update == 0) m.update();    // periodic model update
 
+				std::cout << "length at enc od decode: " << length << "\n";
 				return sym;
 			}
 
@@ -272,6 +291,7 @@ namespace laszip {
 
 		private:
 			void renorm_dec_interval() {
+				std::cout << "arimthetic_decoder::renorm_dev_inverva()\n";
 				do {                                          // read least-significant byte
 					value = (value << 8) | instream.getByte();
 				} while ((length <<= 8) < AC__MinLength);        // length multiplied by 256

@@ -38,13 +38,18 @@
 #include <memory>
 #include <cassert>
 
-namespace laszip {
-	namespace compressors {
-		struct integer {
-			integer(U32 bits = 16, U32 contexts = 1, U32 bits_high = 8, U32 range = 0):
-				bits(bits), contexts(contexts), bits_high(bits_high), range(range) {
-					
-				if (range) { // the corrector's significant bits and range
+namespace laszip
+{
+	namespace compressors
+	{
+		struct integer
+		{
+			integer(U32 bits = 16, U32 contexts = 1, U32 bits_high = 8, U32 range = 0) :
+					bits(bits), contexts(contexts), bits_high(bits_high), range(range)
+			{
+
+				if (range)
+				{ // the corrector's significant bits and range
 					corr_bits = 0;
 					corr_range = range;
 					while (range)
@@ -52,23 +57,26 @@ namespace laszip {
 						range = range >> 1;
 						corr_bits++;
 					}
-					if (corr_range == (1u << (corr_bits-1))) {
+					if (corr_range == (1u << (corr_bits - 1)))
+					{
 						corr_bits--;
 					}
 
 					// the corrector must fall into this interval
-					corr_min = -((I32)(corr_range/2));
+					corr_min = -((I32) (corr_range / 2));
 					corr_max = corr_min + corr_range - 1;
 				}
-				else if (bits && bits < 32) {
+				else if (bits && bits < 32)
+				{
 					corr_bits = bits;
 					corr_range = 1u << bits;
 
 					// the corrector must fall into this interval
-					corr_min = -((I32)(corr_range/2));
+					corr_min = -((I32) (corr_range / 2));
 					corr_max = corr_min + corr_range - 1;
 				}
-				else {
+				else
+				{
 					corr_bits = 32;
 					corr_range = 0;
 					// the corrector must fall into this interval
@@ -79,25 +87,29 @@ namespace laszip {
 				k = 0;
 			}
 
-			~integer() {
+			~integer()
+			{
 				mBits.clear();
 				mCorrector.clear();
 			}
 
-			void init() {
+			void init()
+			{
 				using laszip::models::arithmetic;
 				using laszip::models::arithmetic_bit;
 
 				U32 i;
 
 				// maybe create the models
-				if (mBits.empty()) {
+				if (mBits.empty())
+				{
 					for (i = 0; i < contexts; i++)
-						mBits.push_back(arithmetic(corr_bits+1));
+						mBits.push_back(arithmetic(corr_bits + 1));
 
 #ifndef COMPRESS_ONLY_K
 					// mcorrector0 is already in init state
-					for (i = 1; i <= corr_bits; i++) {
+					for (i = 1; i <= corr_bits; i++)
+					{
 						U32 v = i <= bits_high ? 1 << i : 1 << bits_high;
 						mCorrector.push_back(arithmetic(v));
 					}
@@ -105,26 +117,31 @@ namespace laszip {
 				}
 			}
 
-			unsigned int getK() const { return k; }
+			unsigned int getK() const
+			{ return k; }
 
 			template<
-				typename TEncoder
+					typename TEncoder
 			>
-			void compress(TEncoder& enc, I32 pred, I32 real, U32 context) {
+			void compress(TEncoder &enc, I32 pred, I32 real, U32 context)
+			{
 				// the corrector will be within the interval [ - (corr_range - 1)  ...  + (corr_range - 1) ]
 				I32 corr = real - pred;
 				// we fold the corrector into the interval [ corr_min  ...  corr_max ]
-				if (corr < corr_min) corr += corr_range;
-				else if (corr > corr_max) corr -= corr_range;
+				if (corr < corr_min)
+					corr += corr_range;
+				else if (corr > corr_max)
+					corr -= corr_range;
 
 				writeCorrector(enc, corr, mBits[context]);
 			}
 
 			template<
-				typename TEncoder,
-				typename TEntropyModel
+					typename TEncoder,
+					typename TEntropyModel
 			>
-			void writeCorrector(TEncoder& enc, int c, TEntropyModel& mBits) {
+			void writeCorrector(TEncoder &enc, int c, TEntropyModel &mBits)
+			{
 				U32 c1;
 
 				// find the tighest interval [ - (2^k - 1)  ...  + (2^k) ] that contains c
@@ -133,7 +150,7 @@ namespace laszip {
 
 				// do this by checking the absolute value of c (adjusted for the case that c is 2^k)
 
-				c1 = (c <= 0 ? -c : c-1);
+				c1 = (c <= 0 ? -c : c - 1);
 
 				// this loop could be replaced with more efficient code
 
@@ -182,7 +199,7 @@ namespace laszip {
 						if (c < 0) // then c is in the interval [ - (2^k - 1)  ...  - (2^(k-1)) ]
 						{
 							// so we translate c into the interval [ 0 ...  + 2^(k-1) - 1 ] by adding (2^k - 1)
-							c += ((1<<k) - 1);
+							c += ((1 << k) - 1);
 						}
 						else // then c is in the interval [ 2^(k-1) + 1  ...  2^k ]
 						{
@@ -192,18 +209,18 @@ namespace laszip {
 						if (k <= bits_high) // for small k we code the interval in one step
 						{
 							// compress c with the range coder
-							enc.encodeSymbol(mCorrector[k-1], c);
+							enc.encodeSymbol(mCorrector[k - 1], c);
 						}
 						else // for larger k we need to code the interval in two steps
 						{
 							// figure out how many lower bits there are 
-							int k1 = k-bits_high;
+							int k1 = k - bits_high;
 							// c1 represents the lowest k-bits_high+1 bits
-							c1 = c & ((1<<k1) - 1);
+							c1 = c & ((1 << k1) - 1);
 							// c represents the highest bits_high bits
 							c = c >> k1;
 							// compress the higher bits using a context table
-							enc.encodeSymbol(mCorrector[k-1], c);
+							enc.encodeSymbol(mCorrector[k - 1], c);
 							// store the lower k1 bits raw
 							enc.writeBits(k1, c1);
 						}
@@ -212,7 +229,7 @@ namespace laszip {
 				else // then c is 0 or 1
 				{
 					assert((c == 0) || (c == 1));
-					enc.encodeBit(mCorrector0,c);
+					enc.encodeBit(mCorrector0, c);
 				}
 #endif // COMPRESS_ONLY_K
 			}
