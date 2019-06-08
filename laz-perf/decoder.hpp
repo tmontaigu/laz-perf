@@ -148,7 +148,7 @@ namespace laszip {
 
 			template<typename TEntropyModel>
 			U32 decodeSymbol(TEntropyModel& m) {
-				std::cout << "decodeSymbol -> length: " << length << '\n';
+				std::cout << "\narithmetic::decodeSymbol -> length: " << length << '\n';
 				U32 n, sym, x, y = length;
 
 				if (m.decoder_table) {             // use table look-up for faster decoding
@@ -157,16 +157,20 @@ namespace laszip {
 
 					sym = m.decoder_table[t];      // initial decision based on table look-up
 					n = m.decoder_table[t+1] + 1;
+					std::cout << "table [";
 					for (int i = 0; i < (m.table_size + 2); ++i)
 					{
 						std::cout << m.decoder_table[i] << ", ";
 					}
-					std::cout << "len : " << (m.table_size + 2) << '\n';
+					std::cout << "] len : " << (m.table_size + 2) << '\n';
 					std::cout << "t: " << t << " sym: " << sym << " n " << n << '\n';
 
 					while (n > sym + 1) {                      // finish with bisection search
 						U32 k = (sym + n) >> 1;
-						if (m.distribution[k] > dv) n = k; else sym = k;
+						if (m.distribution[k] > dv)
+							n = k;
+						else
+							sym = k;
 					}
 
 					// compute products
@@ -195,7 +199,6 @@ namespace laszip {
 
 				std::cout << "VALUE: "<< value  << " X " << x << '\n';
 				value -= x;                                               // update interval
-				std::cout << "VALUE: "<< value << '\n';
 				length = y - x;
 
 				std::cout << "length: " << length << " will renorm ? " << (length < AC__MinLength) << '\n';

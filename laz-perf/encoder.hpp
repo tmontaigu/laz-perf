@@ -119,7 +119,7 @@ namespace laszip {
 			}
 
 			void done() {
-				std::cout << "encoders::done()\n";
+				std::cout << "encoders::done() -> length: "  << length << "\n";
 				U32 init_base = base;                 // done encoding: set final data bytes
 				BOOL another_byte = TRUE;
 
@@ -159,9 +159,11 @@ namespace laszip {
 			/* Encode a bit with modelling                               */
 			template<typename EntropyModel>
 			void encodeBit(EntropyModel& m, U32 sym) {
+				std::cout << "encoder::encodeBit() -> sym: " << sym << "\n";
 				assert(sym <= 1);
 
 				U32 x = m.bit_0_prob * (length >> BM__LengthShift);       // product l x p0
+				std::cout << "bit_0_prob: " << m.bit_0_prob << " , length: " << length << " => x: " << x << '\n';
 				// update interval
 				if (sym == 0) {
 					length = x;
@@ -176,12 +178,13 @@ namespace laszip {
 
 				if (length < AC__MinLength) renorm_enc_interval();        // renormalization
 				if (--m.bits_until_update == 0) m.update();       // periodic model update
+				std::cout << "length at end of encodeBit(): " << length << '\n';
 			}
 
 			/* Encode a symbol with modelling                            */
 			template <typename EntropyModel>
 			void encodeSymbol(EntropyModel& m, U32 sym) {
-				std::cout << "encoder::encodeSymbol: " <<  length << "\n";
+				std::cout << "\nencoder::encodeSymbol -> length: " <<  length << " symbol: " << sym << " last_symbol: " << m.last_symbol << "\n";
 				assert(sym <= m.last_symbol);
 
 				U32 x, init_base = base;
@@ -199,7 +202,8 @@ namespace laszip {
 					std::cout << "length: " << length  << " sym +1: " << (sym + 1) << " distrib: " << m.distribution[sym +1] << '\n';
 				}
 
-				if (init_base > base) propagate_carry();                 // overflow = carry
+				if (init_base > base) propagate_carry();
+				std::cout << "AYAYA! " << length << '\n';
 				if (length < AC__MinLength) renorm_enc_interval();        // renormalization
 
 				++m.symbol_count[sym];

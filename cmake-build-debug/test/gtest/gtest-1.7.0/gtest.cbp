@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="gtest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\examples\;CMake Files\benchmarks\;CMake Files\test\;CMake Files\test\gtest\;CMake Files\test\gtest\gtest-1.7.0\;CMake Files\test\gtest\gtest-1.7.0\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest_main"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/lazperf-config.cmake.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/lazperf-configVersion.cmake.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmarks\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/test_main.hpp.in">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\gtest\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\gtest\gtest-1.7.0\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

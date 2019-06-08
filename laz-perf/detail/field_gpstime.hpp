@@ -324,7 +324,8 @@ namespace laszip {
 						if (multi == 0) {
 							gpstime_diff = decompressors_.ic_gpstime.decompress(dec, 0, 7);
 							common_.multi_extreme_counter[common_.last]++;
-							if (common_.multi_extreme_counter[common_.last] > 3) { common_.last_gpstime_diff[common_.last] = gpstime_diff;
+							if (common_.multi_extreme_counter[common_.last] > 3) {
+								common_.last_gpstime_diff[common_.last] = gpstime_diff;
 								common_.multi_extreme_counter[common_.last] = 0;
 							}
 						}

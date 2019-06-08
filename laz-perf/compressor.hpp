@@ -125,6 +125,7 @@ namespace laszip
 			>
 			void compress(TEncoder &enc, I32 pred, I32 real, U32 context)
 			{
+				std::cout << "interger_compressor::compress() -> pred: " << pred << " real: " << real << " context: " << context << '\n';
 				// the corrector will be within the interval [ - (corr_range - 1)  ...  + (corr_range - 1) ]
 				I32 corr = real - pred;
 				// we fold the corrector into the interval [ corr_min  ...  corr_max ]

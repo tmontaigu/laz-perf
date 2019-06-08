@@ -194,6 +194,7 @@ namespace laszip {
 
 				// if any of the bit fields changed, compress them
 				if (changed_values & (1 << 5)) {
+					std::cout << "bit_fields\n";
 					unsigned char b = detail::bitfields_to_char(this_val),
 								  last_b = detail::bitfields_to_char(common_.last_);
 					enc.encodeSymbol(*common_.m_bit_byte[last_b], b);
@@ -207,17 +208,21 @@ namespace laszip {
 
 				// if the classification has changed, compress it
 				if (changed_values & (1 << 3)) {
+					std::cout << "classif\n";
 					enc.encodeSymbol(*common_.m_classification[common_.last_.classification], this_val.classification);
 				}
 
 				// if the scan angle rank has changed, compress it
 				if (changed_values & (1 << 2)) {
+					std::cout << "scan angle rank: " << int(this_val.scan_angle_rank ) << " vs " << int(common_.last_.scan_angle_rank);
+					std::cout << "fold thingy:" << int(U8_FOLD(this_val.scan_angle_rank - common_.last_.scan_angle_rank)) << '\n';
                	    enc.encodeSymbol(*common_.m_scan_angle_rank[this_val.scan_direction_flag],
 							U8_FOLD(this_val.scan_angle_rank - common_.last_.scan_angle_rank));
 				}
 
 				// encode user data if changed
 				if (changed_values & (1 << 1)) {
+					std::cout << "user_data\n";
 					enc.encodeSymbol(*common_.m_user_data[common_.last_.user_data], this_val.user_data);
 				}
 
@@ -293,6 +298,7 @@ namespace laszip {
 
 					// decompress the intensity if it has changed
 					if (changed_values & (1 << 4)) {
+						std::cout << "Intensity -> m: " << m << ", last intensity[m]: " << common_.last_intensity[m] << "\n";
 						common_.last_.intensity = static_cast<unsigned short>(decompressors_.ic_intensity.decompress(dec, common_.last_intensity[m], (m < 3 ? m : 3)));
 						common_.last_intensity[m] = common_.last_.intensity;
 					}

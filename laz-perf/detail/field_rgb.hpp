@@ -119,16 +119,20 @@ namespace laszip {
 				int corr;
 
 				unsigned int sym = detail::color_diff_bits(this_val, last);
+				std::cout << "sym: " << sym << '\n';
 
 				enc.encodeSymbol(m_byte_used, sym);
 
 				// high and low R
 				if (sym & (1 << 0)) {
 					diff_l = (this_val.r & 0xFF) - (last.r & 0xFF);
+					//std::cout << (this_val.r & 0xFF) << " " <<  (last.r & 0xFF)  << " " << ((this_val.r & 0xFF) - (last.r & 0xFF)) << int(U8_FOLD(diff_l)) << "\n";
+					std::cout << "diff_l: " << diff_l << '\n';
 					enc.encodeSymbol(m_rgb_diff_0, U8_FOLD(diff_l));
 				}
 				if (sym & (1 << 1)) {
 					diff_h = static_cast<int>(this_val.r >> 8) - (last.r >> 8);
+					std::cout << "diff_h: " << diff_h << "\n";
 					enc.encodeSymbol(m_rgb_diff_1, U8_FOLD(diff_h));
 				}
 
@@ -175,7 +179,7 @@ namespace laszip {
 					last = packers<las::rgb>::unpack(buf);
                     return buf + sizeof(las::rgb);
 				}
-				
+
 				unsigned char corr;
 				int diff = 0;
 				unsigned int sym = dec.decodeSymbol(m_byte_used);
@@ -185,6 +189,7 @@ namespace laszip {
 				if (sym & (1 << 0)) {
 					corr = static_cast<unsigned char>(dec.decodeSymbol(m_rgb_diff_0));
 					this_val.r = static_cast<unsigned short>(U8_FOLD(corr + (last.r & 0xFF)));
+					std::cout << "low corr: " << int(corr) << "this: " << this_val.r << " low last: " << (last.r & 0xFF) << '\n';
 				}
 				else {
 					this_val.r = last.r & 0xFF;
@@ -192,6 +197,7 @@ namespace laszip {
 
 				if (sym & (1 << 1)) {
 					corr = static_cast<unsigned char>(dec.decodeSymbol(m_rgb_diff_1));
+					std::cout << "hight corr: " << int(corr) << '\n';
 					this_val.r |= (static_cast<unsigned short>(U8_FOLD(corr + (last.r >> 8))) << 8);
 				}
 				else {

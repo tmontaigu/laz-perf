@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LAZPERF"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\examples\;CMake Files\benchmarks\;CMake Files\test\;CMake Files\test\gtest\;CMake Files\test\gtest\gtest-1.7.0\;CMake Files\test\gtest\gtest-1.7.0\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 test"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 install/local"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 install"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 list_install_components"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 simple"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="simple/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/simple.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 simple/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="point10">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/point10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 point10"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="point10/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/point10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 point10/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="readlaz">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/readlaz.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 readlaz"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="readlaz/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/readlaz.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 readlaz/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dynamic">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/dynamic.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 dynamic"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dynamic/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples/dynamic.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 dynamic/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\examples\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brute_point10">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks/brute_point10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 brute_point10"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brute_point10/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks/brute_point10.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 brute_point10/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brute">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks/brute.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 brute"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="brute/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks/brute.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/benchmarks"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/../laz-perf"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 brute/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\benchmarks\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="io_tests">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/io_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/.."/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 io_tests"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="io_tests/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/io_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/.."/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 io_tests/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lazperf_tests">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/lazperf_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/.."/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 lazperf_tests"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lazperf_tests/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/lazperf_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/.."/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 lazperf_tests/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stream_tests">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/stream_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/.."/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 stream_tests"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stream_tests/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/stream_tests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/.."/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 stream_tests/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest_main"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0/gtest_main.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/cmake-build-debug/test/gtest/gtest-1.7.0"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-D_CRT_SECURE_NO_DEPRECATE"/>
+					<Add option="-D_CRT_SECURE_NO_WARNINGS"/>
+					<Add option="-D_CRT_NONSTDC_NO_WARNING"/>
+					<Add option="-D_SCL_SECURE_NO_WARNINGS"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/include"/>
+					<Add directory="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\Thomas\Projects\examples\lazperf-rs\lazperf-c\laz-perf\cmake-build-debug\test\gtest\gtest-1.7.0\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/brute.cpp">
+			<Option target="brute"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/brute_point10.cpp">
+			<Option target="brute_point10"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/dynamic.cpp">
+			<Option target="dynamic"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/point10.cpp">
+			<Option target="point10"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/readlaz.cpp">
+			<Option target="readlaz"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/simple.cpp">
+			<Option target="simple"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/io_tests.cpp">
+			<Option target="io_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/lazperf_tests.cpp">
+			<Option target="lazperf_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/stream_tests.cpp">
+			<Option target="stream_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/lazperf-config.cmake.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/lazperf-configVersion.cmake.in">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/benchmarks/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\benchmarks\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/test_main.hpp.in">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\gtest\gtest-1.7.0\"/>
+		</Unit>
+		<Unit filename="C:/Users/Thomas/Projects/examples/lazperf-rs/lazperf-c/laz-perf/test/gtest/gtest-1.7.0/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\test\gtest\gtest-1.7.0\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
